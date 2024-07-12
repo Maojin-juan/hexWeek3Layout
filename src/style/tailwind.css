@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.google.com/?selected=Material+Icons');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* 擴充專案的全站樣式 */
+  body{
+    @apply font-w3font;
+  }
+
+  /* img{
+    @apply w-full h-auto;
+  } */
+}
+
+@layer components {
+  /* 自組元件 */
+  .container {
+    @apply mx-auto;
+    max-width: 1296px;
+  }
+
+  .card{
+    @apply col-span-1 p-4 border border-[#E3E3E3] shadow-[4px_4px_4px_0px_rgba(0,0,0,0.08)] hover:scale-105 ease-in-out duration-300;
+  }
+  
+  .card-title{
+    @apply text-xl leading-[30px];
+  }
+
+  .rounded-shadow{
+    @apply rounded-[40px] hover:shadow-[0px_0px_16px_3px_rgba(144,148,255,0.9)] ease-in-out duration-300;
+  }
+
+  .img-hover{
+    @apply hover:scale-105 ease-in-out duration-300;
+  }
+
+  .btn{
+    @apply rounded-full cursor-pointer px-6 py-3 flex hover:scale-110 ease-in-out duration-300;
+  }
+}
+
+@layer utilities {
+  /* 自組樣式 */
+  .logo{
+    width: 80px;
+    min-height: 48.57px;
+  }
+
+  .banner{
+    @apply bg-cover;
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true');
+  }
+}
