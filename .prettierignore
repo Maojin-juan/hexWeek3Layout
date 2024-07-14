@@ -1,0 +1,7 @@
+# 用於忽略不須格式化之檔案
+
+# Ignore artifacts:
+# dist
+
+# Ignore all HTML files:
+# **/*.html
