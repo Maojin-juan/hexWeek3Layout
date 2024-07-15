@@ -15,7 +15,7 @@
   /* 自組元件 */
 
   .card {
-    @apply shadow-[0px_2px_6px_rgba(0,0,0,0.16)] duration-300 ease-in-out;
+    @apply flex flex-col shadow-[0px_2px_6px_rgba(0,0,0,0.16)] rounded duration-300 ease-in-out;
   }
 
   .card-img {
@@ -23,7 +23,7 @@
   }
 
   .card-content {
-    @apply rounded-b border border-[#DEE2E6] p-4;
+    @apply min-h-[205px] justify-between flex flex-col p-4;
   }
 
   .card-title {
@@ -44,14 +44,6 @@
 
   .btn {
     @apply flex cursor-pointer rounded-full px-6 py-3 duration-300 ease-in-out hover:scale-110;
-  }
-
-  .material-symbols-outlined {
-    font-variation-settings:
-      "FILL" 0,
-      "wght" 400,
-      "GRAD" 0,
-      "opsz" 40;
   }
 }
 

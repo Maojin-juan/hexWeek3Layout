@@ -75,7 +75,7 @@
       <h2 class="pb-6 text-center text-2xl sm:text-5xl sm:leading-normal">
         用專業的心，做專業的事
       </h2>
-      <ul class="container flex flex-col gap-8 sm:grid sm:grid-cols-2 sm:gap-6">
+      <ul class="container grid gap-8 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
         <li>
           <img
             class="mx-auto mb-4 h-[100px] w-[100px]"
@@ -130,15 +130,19 @@
       >
         經典系列鏡框
       </h2>
-      <ul class="flex flex-col gap-6 md:grid md:grid-cols-12">
-        <li class="md:col-span-6 md:col-start-4">
+      <ul class="gap-6 md:grid md:grid-cols-12">
+        <li
+          class="md:col-span-6 md:col-start-4 lg:col-span-4 lg:col-start-auto"
+        >
           <img
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-1.png?raw=true"
             alt="glassesFrame-1"
           />
           <em class="text-5xl font-black leading-normal text-main">OPTICAL</em>
         </li>
-        <li class="md:col-span-6 md:col-start-4">
+        <li
+          class="md:col-span-6 md:col-start-4 lg:col-span-4 lg:col-start-auto"
+        >
           <img
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-2.png?raw=true"
             alt="glassesFrame-2"
@@ -147,7 +151,9 @@
             >SUNGLASSES</em
           >
         </li>
-        <li class="md:col-span-6 md:col-start-4">
+        <li
+          class="md:col-span-6 md:col-start-4 lg:col-span-4 lg:col-start-auto"
+        >
           <img
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-3.png?raw=true"
             alt="glassesFrame-3"
@@ -161,10 +167,14 @@
     <section
       class="bg-sm-glasses py-10 md:bg-md-glasses md:py-20 lg:bg-glasses"
     >
-      <ul class="container flex flex-col gap-6 text-center">
-        <h2 class="pb-6 text-2xl text-5xl leading-normal text-white">
-          聯名設計鏡框
-        </h2>
+      <h2
+        class="pb-6 text-center text-2xl text-5xl leading-normal text-white md:pb-12"
+      >
+        聯名設計鏡框
+      </h2>
+      <ul
+        class="container flex flex-col gap-6 text-center lg:flex-row lg:gap-0"
+      >
         <li>
           <img
             class="hidden md:block"
@@ -199,13 +209,13 @@
         </li>
       </ul>
     </section>
-    <article class="container py-10">
+    <article class="container py-10 md:py-20">
       <h2
-        class="pb-6 text-center text-2xl leading-normal text-main-dark md:text-5xl"
+        class="pb-6 text-center text-2xl leading-normal text-main-dark md:pb-12 md:text-5xl"
       >
         顧客推薦
       </h2>
-      <ul class="flex flex-col gap-4 sm:grid sm:grid-cols-2">
+      <ul class="grid gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-4">
         <li class="card">
           <img
             class="card-img"
@@ -213,8 +223,10 @@
             alt="commet-1"
           />
           <div class="card-content">
-            <h4 class="card-title">Jessy</h4>
-            <p class="pb-24">眼鏡品質優良，下次還會想來這邊購買！</p>
+            <div>
+              <h4 class="card-title">Jessy</h4>
+              <p>眼鏡品質優良，下次還會想來這邊購買！</p>
+            </div>
             <p class="card-time">2021/06/20</p>
           </div>
         </li>
@@ -225,10 +237,10 @@
             alt="commet-2"
           />
           <div class="card-content">
-            <h4 class="card-title">凱倫</h4>
-            <p class="pb-24">
-              做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！
-            </p>
+            <div>
+              <h4 class="card-title">凱倫</h4>
+              <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
+            </div>
             <p class="card-time">2021/04/18</p>
           </div>
         </li>
@@ -239,10 +251,12 @@
             alt="commet-3"
           />
           <div class="card-content">
-            <h4 class="card-title">悠悠</h4>
-            <p class="pb-24">
-              謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！
-            </p>
+            <div>
+              <h4 class="card-title">悠悠</h4>
+              <p>
+                謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！
+              </p>
+            </div>
             <p class="card-time">2020/12/25</p>
           </div>
         </li>
@@ -253,8 +267,10 @@
             alt="commet-4"
           />
           <div class="card-content">
-            <h4 class="card-title">Kyuan</h4>
-            <p class="pb-24">服務很好，品質沒有任何問題，非常喜歡。</p>
+            <div>
+              <h4 class="card-title">Kyuan</h4>
+              <p>服務很好，品質沒有任何問題，非常喜歡。</p>
+            </div>
             <p class="card-time">2020/10/31</p>
           </div>
         </li>
@@ -264,66 +280,65 @@
       <div
         class="container flex flex-col py-10 not-italic md:grid md:grid-cols-12"
       >
-        <h2
-          class="pb-6 text-center text-2xl text-main-dark md:col-span-10 md:col-start-2 md:text-5xl md:leading-normal"
-        >
-          聯絡我們
-        </h2>
-        <p class="md:col-span-10 md:col-start-2">
-          我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
-        </p>
-        <form
-          class="flex flex-col py-6 md:col-span-10 md:col-start-2"
-          action="index.html"
-        >
-          <label class="pb-2 pt-4" for="name">姓名</label>
-          <input
-            class="input"
-            type="text"
-            id="name"
-            placeholder="陳小明"
-            name="name"
-          />
-          <label class="pb-2 pt-4" for="tel">連絡電話</label>
-          <input
-            class="input"
-            type="text"
-            id="tel"
-            placeholder="0912-345-678"
-            name="name"
-          />
-          <label class="pb-2 pt-4" for="mail">電子郵件</label>
-          <input
-            class="input"
-            type="text"
-            id="mail"
-            placeholder="example@email.com"
-            name="mail"
-          />
-          <label class="pb-2 pt-4" for="opinion">意見反應</label>
-          <input
-            class="input pb-[106px]"
-            type="text"
-            id="opinion"
-            placeholder="請輸入您的意見"
-            name="opinion"
-          />
-          <label class="flex items-start pb-6 pt-4">
-            <input type="checkbox" class="h-6 w-6 text-main-dark" />
-            <span class="pl-1">
-              我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
-            </span>
-          </label>
-        </form>
+        <div class="md:col-span-10 md:col-start-2 lg:col-span-6 lg:col-start-4">
+          <h2
+            class="pb-6 text-center text-2xl text-main-dark md:text-5xl md:leading-normal"
+          >
+            聯絡我們
+          </h2>
+          <p>
+            我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+          </p>
+          <form class="flex flex-col py-6" action="index.html">
+            <label class="pb-2 pt-4" for="name">姓名</label>
+            <input
+              class="input"
+              type="text"
+              id="name"
+              placeholder="陳小明"
+              name="name"
+            />
+            <label class="pb-2 pt-4" for="tel">連絡電話</label>
+            <input
+              class="input"
+              type="text"
+              id="tel"
+              placeholder="0912-345-678"
+              name="name"
+            />
+            <label class="pb-2 pt-4" for="mail">電子郵件</label>
+            <input
+              class="input"
+              type="text"
+              id="mail"
+              placeholder="example@email.com"
+              name="mail"
+            />
+            <label class="pb-2 pt-4" for="opinion">意見反應</label>
+            <input
+              class="input pb-[106px]"
+              type="text"
+              id="opinion"
+              placeholder="請輸入您的意見"
+              name="opinion"
+            />
+            <label class="flex items-start pb-6 pt-4">
+              <input type="checkbox" class="h-6 w-6 text-main-dark" />
+              <span class="pl-1">
+                我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+              </span>
+            </label>
+          </form>
+        </div>
         <button
-          class="bg-main py-4 text-white md:col-span-6 md:col-start-4"
+          class="bg-main py-4 text-white md:col-span-6 md:col-start-4 lg:col-span-4 lg:col-start-5"
           type="submit"
         >
           確認送出
         </button>
       </div>
     </address>
-    <footer class="bg-main py-6 text-white md:py-12">
+    <footer class="bg-main py-6 text-white md:pb-10 md:pt-12">
       <ul class="contact container">
         <li class="flex flex-wrap items-center justify-between pb-2">
           <ul class="hidden gap-12 md:flex">
@@ -339,31 +354,31 @@
             </span>
             0800-000-000
           </a>
-          <ul class="flex gap-2">
+          <ul class="flex gap-2 md:gap-4">
             <li>
               <img
-                class="h-6 w-6 md:h-10 md:w-10"
+                class="size-6 md:size-10 lg:size-12"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic-social-fb.png?raw=true"
                 alt="facebook"
               />
             </li>
             <li>
               <img
-                class="h-6 w-6 md:h-10 md:w-10"
+                class="size-6 md:size-10 lg:size-12"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_ig.png?raw=true"
                 alt="instagram"
               />
             </li>
             <li>
               <img
-                class="h-6 w-6 md:h-10 md:w-10"
+                class="size-6 md:size-10 lg:size-12"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_line.png?raw=true"
                 alt="line"
               />
             </li>
           </ul>
         </li>
-        <li class="pb-6">
+        <li>
           <a
             class="hidden items-center md:flex md:text-4xl md:leading-[54px]"
             href="tel:+0800-000-000"
@@ -387,12 +402,16 @@
             glasses@business.com
           </a>
         </li>
-        <hr />
+        <hr class="mb-4 mt-6 md:my-8" />
       </ul>
-      <ul class="container flex flex-col gap-2 pt-4">
+      <ul
+        class="container flex flex-col gap-2 pt-6 md:flex-row md:justify-between md:pt-0"
+      >
         <li>Copyright © 2020 Glasses.All rights reserved.</li>
-        <li>隱私權政策</li>
-        <li>服務條款</li>
+        <div class="flex flex-col gap-2 md:flex-row md:gap-12">
+          <li>隱私權政策</li>
+          <li>服務條款</li>
+        </div>
       </ul>
     </footer>
     <!-- <div id="footer"></div> -->

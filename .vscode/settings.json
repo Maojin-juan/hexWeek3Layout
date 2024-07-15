@@ -1,0 +1,8 @@
+{
+  "editor.formatOnSave": true,/*儲存時自動化格式化*/
+  // "prettier.singleQuote": true,/*使用單引號*/
+  // "prettier.semi": false,/*結束是否加分號*/
+  // "prettier.printWidth": 120,/*行寬*/
+  // "prettier.trailingComma": "es5",/*尾隨逗號*/
+  // "prettier.tabWidth": 2/*縮排空幾格*/
+}
