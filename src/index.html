@@ -12,37 +12,37 @@
   <body>
     <!-- <div id="navbar"></div> -->
     <nav class="bg-main">
-      <div class="flex flex-col justify-between md:container">
+      <div class="flex flex-col md:flex-row justify-between md:container">
         <img
-          class="logo ml-[15px] py-4"
+          class="logo ml-[15px] md:ml-0 py-4"
           src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true"
           alt="logo"
         />
-        <ul class="flex flex-wrap items-center text-center text-white">
-          <li class="w-1/2">
+        <ul class="flex flex-wrap md:flex-nowrap items-center text-center text-white">
+          <li class="md:w-auto w-1/2">
             <a
-              class="block text-nowrap px-[62px] py-3 outline outline-1 outline-white"
+              class="block text-nowrap px-[62px] md:px-0 md:pl-16 py-3 md:outline-none outline outline-1 outline-white"
               href="#"
               >系列鏡框</a
             >
           </li>
-          <li class="w-1/2">
+          <li class="md:w-auto w-1/2">
             <a
-              class="block text-nowrap px-[62px] py-3 outline outline-1 outline-white"
+              class="block text-nowrap px-[62px] md:px-0 md:pl-16 py-3 md:outline-none outline outline-1 outline-white"
               href="#"
               >門市據點</a
             >
           </li>
-          <li class="w-1/2">
+          <li class="md:w-auto w-1/2">
             <a
-              class="block text-nowrap px-[62px] py-3 outline outline-1 outline-white"
+              class="block text-nowrap px-[62px] md:px-0 md:pl-16 py-3 md:outline-none outline outline-1 outline-white"
               href="#"
               >部落格</a
             >
           </li>
-          <li class="w-1/2">
+          <li class="md:w-auto w-1/2">
             <a
-              class="block text-nowrap px-[62px] py-3 outline outline-1 outline-white"
+              class="block text-nowrap px-[62px] md:px-0 md:pl-16 py-3 md:outline-none outline outline-1 outline-white"
               href="#"
               >常見問題</a
             >
@@ -50,12 +50,12 @@
         </ul>
       </div>
     </nav>
-    <main class="bg-sm-banner bg-cover md:bg-banner">
-      <div class="container py-36 text-end text-main-dark md:py-[296px]">
-        <p class="lg:text-4xl lg:leading-[54px]">
+    <main class="bg-sm-banner bg-cover bg-center 2xl:bg-banner">
+      <div class="md:container container py-36 text-end text-main-dark md:py-[296px]">
+        <p class="md:text-4xl lg:text-4xl md:leading-[54px]">
           Promise-Desert 2020 早春系列
         </p>
-        <h2 class="pb-2 text-2xl font-bold lg:text-[64px] lg:leading-[96px]">
+        <h2 class="pb-2 md:pb-1 text-2xl font-bold md:text-[64px] md:leading-[96px]">
           看得清，才能看得遠
         </h2>
         <button
@@ -65,14 +65,12 @@
         </button>
       </div>
     </main>
-    <section class="container bg-bgc py-10 text-main-dark">
-      <ul class="flex flex-col gap-8">
-        <li>
-          <h2 class="text-center text-2xl">用專業的心，做專業的事</h2>
-        </li>
+    <section class="bg-bgc py-10 sm:py-20 text-main-dark">
+      <h2 class="pb-6 text-center text-2xl sm:text-5xl sm:leading-normal">用專業的心，做專業的事</h2>
+      <ul class="flex flex-col sm:grid sm:grid-cols-2 gap-8 sm:gap-6 container">
         <li>
           <img
-            class="px-[132px] pb-6"
+            class="mx-auto w-[100px] h-[100px] mb-4"
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-1.png?raw=true"
             alt="priceIcon"
           />
@@ -83,7 +81,7 @@
         </li>
         <li>
           <img
-            class="px-[132px] pb-6"
+            class="mx-auto w-[100px] h-[100px] mb-4"
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-2.png?raw=true"
             alt="timeIcon"
           />
@@ -95,7 +93,7 @@
         </li>
         <li>
           <img
-            class="px-[132px] pb-6"
+            class="mx-auto w-[100px] h-[100px] mb-4"
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-3.png?raw=true"
             alt="serviceIcon"
           />
@@ -107,7 +105,7 @@
         </li>
         <li>
           <img
-            class="px-[132px] pb-6"
+            class="mx-auto w-[100px] h-[100px] mb-4"
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-sectioin2-4.png?raw=true"
             alt="glassesIcon"
           />
@@ -120,22 +118,20 @@
     </section>
     <section class="container py-10 text-center">
       <ul class="flex flex-col gap-6">
-        <li>
-          <h2 class="pb-6 text-2xl text-main-dark">經典系列鏡框</h2>
-        </li>
+        <h2 class="pb-6 sm:pb-12 text-2xl sm:text-5xl sm:leading-normal text-main-dark">經典系列鏡框</h2>
         <li>
           <img
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-1.png?raw=true"
             alt="glassesFrame-1"
           />
-          <em class="text-5xl font-black leading-[72px] text-main">OPTICAL</em>
+          <em class="text-5xl font-black leading-normal text-main">OPTICAL</em>
         </li>
         <li>
           <img
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-2.png?raw=true"
             alt="glassesFrame-2"
           />
-          <em class="text-5xl font-black leading-[72px] text-main"
+          <em class="text-5xl font-black leading-normal text-main"
             >SUNGLASSES</em
           >
         </li>
@@ -144,7 +140,7 @@
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-3.png?raw=true"
             alt="glassesFrame-3"
           />
-          <em class="text-5xl font-black leading-[72px] text-main"
+          <em class="text-5xl font-black leading-normal text-main"
             >FUNCTIONAL</em
           >
         </li>
@@ -169,7 +165,7 @@
             alt="glasses-1-sm"
           />
           <em
-            class="block bg-white py-2 text-5xl font-black leading-[72px] text-main"
+            class="block bg-white py-2 text-5xl font-black leading-normal text-main"
             >DUUBLE A+</em
           >
         </li>
@@ -185,7 +181,7 @@
             alt="glasses-2-sm"
           />
           <em
-            class="block bg-white py-2 text-5xl font-black leading-[72px] text-main"
+            class="block bg-white py-2 text-5xl font-black leading-normal text-main"
             >YOUTH</em
           >
         </li>
@@ -248,54 +244,56 @@
         </li>
       </ul>
     </article>
-    <address class="container flex flex-col bg-bgc py-10 not-italic">
-      <h2 class="pb-6 text-center text-2xl text-main-dark">聯絡我們</h2>
-      <p>
-        我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
-      </p>
-      <form class="flex flex-col py-6" action="index.html">
-        <label class="pb-2 pt-4" for="name">姓名</label>
-        <input
-          class="input"
-          type="text"
-          id="name"
-          placeholder="陳小明"
-          name="name"
-        />
-        <label class="pb-2 pt-4" for="tel">連絡電話</label>
-        <input
-          class="input"
-          type="text"
-          id="tel"
-          placeholder="0912-345-678"
-          name="name"
-        />
-        <label class="pb-2 pt-4" for="mail">電子郵件</label>
-        <input
-          class="input"
-          type="text"
-          id="mail"
-          placeholder="example@email.com"
-          name="mail"
-        />
-        <label class="pb-2 pt-4" for="opinion">意見反應</label>
-        <input
-          class="input pb-[106px]"
-          type="text"
-          id="opinion"
-          placeholder="請輸入您的意見"
-          name="opinion"
-        />
-        <label class="flex items-start pb-6 pt-4">
-          <input type="checkbox" class="h-6 w-6 text-main-dark" />
-          <span class="pl-1">
-            我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
-          </span>
-        </label>
-      </form>
-      <button class="bg-main py-4 text-white" type="submit">確認送出</button>
+    <address class="bg-bgc">
+      <div class="container flex flex-col py-10 not-italic">
+        <h2 class="pb-6 text-center text-2xl text-main-dark">聯絡我們</h2>
+        <p>
+          我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+        </p>
+        <form class="flex flex-col py-6" action="index.html">
+          <label class="pb-2 pt-4" for="name">姓名</label>
+          <input
+            class="input"
+            type="text"
+            id="name"
+            placeholder="陳小明"
+            name="name"
+          />
+          <label class="pb-2 pt-4" for="tel">連絡電話</label>
+          <input
+            class="input"
+            type="text"
+            id="tel"
+            placeholder="0912-345-678"
+            name="name"
+          />
+          <label class="pb-2 pt-4" for="mail">電子郵件</label>
+          <input
+            class="input"
+            type="text"
+            id="mail"
+            placeholder="example@email.com"
+            name="mail"
+          />
+          <label class="pb-2 pt-4" for="opinion">意見反應</label>
+          <input
+            class="input pb-[106px]"
+            type="text"
+            id="opinion"
+            placeholder="請輸入您的意見"
+            name="opinion"
+          />
+          <label class="flex items-start pb-6 pt-4">
+            <input type="checkbox" class="h-6 w-6 text-main-dark" />
+            <span class="pl-1">
+              我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+            </span>
+          </label>
+        </form>
+        <button class="bg-main py-4 text-white" type="submit">確認送出</button>
+      </div>
     </address>
-    <footer class="text-white bg-main py-6 ">
+    <footer class="text-white bg-main py-6">
       <ul class="contact container">
         <li class="flex items-center justify-between pb-2">
           <div class="flex items-center">

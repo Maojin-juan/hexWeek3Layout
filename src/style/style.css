@@ -606,8 +606,15 @@ video {
 .top-2\/4{
   top: 50%;
 }
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
 .-mt-5{
   margin-top: -1.25rem;
+}
+.mb-6{
+  margin-bottom: 1.5rem;
 }
 .ml-\[15px\]{
   margin-left: 15px;
@@ -617,6 +624,9 @@ video {
 }
 .mt-px{
   margin-top: 1px;
+}
+.mb-4{
+  margin-bottom: 1rem;
 }
 .block{
   display: block;
@@ -645,6 +655,12 @@ video {
 .h-\[18px\]{
   height: 18px;
 }
+.h-\[84px\]{
+  height: 84px;
+}
+.h-\[100px\]{
+  height: 100px;
+}
 .w-1\/2{
   width: 50%;
 }
@@ -662,6 +678,12 @@ video {
 }
 .w-\[18px\]{
   width: 18px;
+}
+.w-\[84px\]{
+  width: 84px;
+}
+.w-\[100px\]{
+  width: 100px;
 }
 .-translate-x-2\/4{
   --tw-translate-x: -50%;
@@ -699,6 +721,9 @@ video {
 .justify-between{
   justify-content: space-between;
 }
+.gap-2{
+  gap: 0.5rem;
+}
 .gap-4{
   gap: 1rem;
 }
@@ -707,9 +732,6 @@ video {
 }
 .gap-8{
   gap: 2rem;
-}
-.gap-2{
-  gap: 0.5rem;
 }
 .text-nowrap{
   text-wrap: nowrap;
@@ -744,16 +766,15 @@ video {
 .bg-cover{
   background-size: cover;
 }
+.bg-center{
+  background-position: center;
+}
 .p-3{
   padding: 0.75rem;
 }
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-.px-\[132px\]{
-  padding-left: 132px;
-  padding-right: 132px;
 }
 .px-\[62px\]{
   padding-left: 62px;
@@ -796,6 +817,9 @@ video {
 .pb-6{
   padding-bottom: 1.5rem;
 }
+.pb-8{
+  padding-bottom: 2rem;
+}
 .pb-\[106px\]{
   padding-bottom: 106px;
 }
@@ -816,9 +840,6 @@ video {
 }
 .pt-\[6px\]{
   padding-top: 6px;
-}
-.pt-6{
-  padding-top: 1.5rem;
 }
 .text-center{
   text-align: center;
@@ -1063,23 +1084,120 @@ video {
   opacity: 1;
 }
 
+@media (min-width: 576px){
+
+  .sm\:grid{
+    display: grid;
+  }
+
+  .sm\:w-1\/2{
+    width: 50%;
+  }
+
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row{
+    flex-direction: row;
+  }
+
+  .sm\:flex-wrap{
+    flex-wrap: wrap;
+  }
+
+  .sm\:gap-6{
+    gap: 1.5rem;
+  }
+
+  .sm\:gap-x-6{
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
+
+  .sm\:gap-y-9{
+    row-gap: 2.25rem;
+  }
+
+  .sm\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .sm\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .sm\:leading-normal{
+    line-height: 1.5;
+  }
+}
+
 @media (min-width: 768px){
+
+  .md\:ml-0{
+    margin-left: 0px;
+  }
 
   .md\:hidden{
     display: none;
   }
 
-  .md\:bg-banner{
-    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
+  .md\:w-auto{
+    width: auto;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:flex-nowrap{
+    flex-wrap: nowrap;
   }
 
   .md\:bg-md-glasses{
     background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true");
   }
 
+  .md\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .md\:py-\[296px\]{
     padding-top: 296px;
     padding-bottom: 296px;
+  }
+
+  .md\:pb-1{
+    padding-bottom: 0.25rem;
+  }
+
+  .md\:pl-16{
+    padding-left: 4rem;
+  }
+
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-\[64px\]{
+    font-size: 64px;
+  }
+
+  .md\:leading-\[54px\]{
+    line-height: 54px;
+  }
+
+  .md\:leading-\[96px\]{
+    line-height: 96px;
+  }
+
+  .md\:outline-none{
+    outline: 2px solid transparent;
+    outline-offset: 2px;
   }
 }
 
@@ -1093,16 +1211,11 @@ video {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+}
 
-  .lg\:text-\[64px\]{
-    font-size: 64px;
-  }
+@media (min-width: 1400px){
 
-  .lg\:leading-\[54px\]{
-    line-height: 54px;
-  }
-
-  .lg\:leading-\[96px\]{
-    line-height: 96px;
+  .\32xl\:bg-banner{
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
   }
 }
