@@ -50,6 +50,7 @@
 @layer utilities {
   /* 自組樣式 */
   .logo {
+    @apply duration-300 ease-in-out hover:scale-110;
     width: 80px;
   }
 }
