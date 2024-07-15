@@ -12,37 +12,39 @@
   <body>
     <!-- <div id="navbar"></div> -->
     <nav class="bg-main">
-      <div class="flex flex-col md:flex-row justify-between md:container">
+      <div class="flex flex-col justify-between md:container md:flex-row">
         <img
-          class="logo ml-[15px] md:ml-0 py-4"
+          class="logo ml-[15px] py-4 md:ml-0"
           src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true"
           alt="logo"
         />
-        <ul class="flex flex-wrap md:flex-nowrap items-center text-center text-white">
-          <li class="md:w-auto w-1/2">
+        <ul
+          class="flex flex-wrap items-center text-center text-white md:flex-nowrap md:text-xl md:leading-[30px]"
+        >
+          <li class="w-1/2 md:w-auto">
             <a
-              class="block text-nowrap px-[62px] md:px-0 md:pl-16 py-3 md:outline-none outline outline-1 outline-white"
+              class="block text-nowrap px-[62px] py-3 outline outline-1 outline-white md:px-0 md:pl-16 md:outline-none"
               href="#"
               >系列鏡框</a
             >
           </li>
-          <li class="md:w-auto w-1/2">
+          <li class="w-1/2 md:w-auto">
             <a
-              class="block text-nowrap px-[62px] md:px-0 md:pl-16 py-3 md:outline-none outline outline-1 outline-white"
+              class="block text-nowrap px-[62px] py-3 outline outline-1 outline-white md:px-0 md:pl-16 md:outline-none"
               href="#"
               >門市據點</a
             >
           </li>
-          <li class="md:w-auto w-1/2">
+          <li class="w-1/2 md:w-auto">
             <a
-              class="block text-nowrap px-[62px] md:px-0 md:pl-16 py-3 md:outline-none outline outline-1 outline-white"
+              class="block text-nowrap px-[62px] py-3 outline outline-1 outline-white md:px-0 md:pl-16 md:outline-none"
               href="#"
               >部落格</a
             >
           </li>
-          <li class="md:w-auto w-1/2">
+          <li class="w-1/2 md:w-auto">
             <a
-              class="block text-nowrap px-[62px] md:px-0 md:pl-16 py-3 md:outline-none outline outline-1 outline-white"
+              class="block text-nowrap px-[62px] py-3 outline outline-1 outline-white md:px-0 md:pl-16 md:outline-none"
               href="#"
               >常見問題</a
             >
@@ -50,12 +52,16 @@
         </ul>
       </div>
     </nav>
-    <main class="bg-sm-banner bg-cover bg-center 2xl:bg-banner">
-      <div class="md:container container py-36 text-end text-main-dark md:py-[296px]">
-        <p class="md:text-4xl lg:text-4xl md:leading-[54px]">
+    <main
+      class="bg-sm-banner bg-cover bg-center py-36 md:py-[296px] 2xl:bg-banner"
+    >
+      <div class="container text-end text-main-dark md:container">
+        <p class="md:text-4xl md:leading-[54px] lg:text-4xl">
           Promise-Desert 2020 早春系列
         </p>
-        <h2 class="pb-2 md:pb-1 text-2xl font-bold md:text-[64px] md:leading-[96px]">
+        <h2
+          class="pb-2 text-2xl font-bold md:pb-1 md:text-[64px] md:leading-[96px]"
+        >
           看得清，才能看得遠
         </h2>
         <button
@@ -65,12 +71,14 @@
         </button>
       </div>
     </main>
-    <section class="bg-bgc py-10 sm:py-20 text-main-dark">
-      <h2 class="pb-6 text-center text-2xl sm:text-5xl sm:leading-normal">用專業的心，做專業的事</h2>
-      <ul class="flex flex-col sm:grid sm:grid-cols-2 gap-8 sm:gap-6 container">
+    <section class="bg-bgc py-10 text-main-dark md:py-20">
+      <h2 class="pb-6 text-center text-2xl sm:text-5xl sm:leading-normal">
+        用專業的心，做專業的事
+      </h2>
+      <ul class="container flex flex-col gap-8 sm:grid sm:grid-cols-2 sm:gap-6">
         <li>
           <img
-            class="mx-auto w-[100px] h-[100px] mb-4"
+            class="mx-auto mb-4 h-[100px] w-[100px]"
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-1.png?raw=true"
             alt="priceIcon"
           />
@@ -81,7 +89,7 @@
         </li>
         <li>
           <img
-            class="mx-auto w-[100px] h-[100px] mb-4"
+            class="mx-auto mb-4 h-[100px] w-[100px]"
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-2.png?raw=true"
             alt="timeIcon"
           />
@@ -93,7 +101,7 @@
         </li>
         <li>
           <img
-            class="mx-auto w-[100px] h-[100px] mb-4"
+            class="mx-auto mb-4 h-[100px] w-[100px]"
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-3.png?raw=true"
             alt="serviceIcon"
           />
@@ -105,7 +113,7 @@
         </li>
         <li>
           <img
-            class="mx-auto w-[100px] h-[100px] mb-4"
+            class="mx-auto mb-4 h-[100px] w-[100px]"
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-sectioin2-4.png?raw=true"
             alt="glassesIcon"
           />
@@ -116,17 +124,21 @@
         </li>
       </ul>
     </section>
-    <section class="container py-10 text-center">
-      <ul class="flex flex-col gap-6">
-        <h2 class="pb-6 sm:pb-12 text-2xl sm:text-5xl sm:leading-normal text-main-dark">經典系列鏡框</h2>
-        <li>
+    <section class="container py-10 text-center md:py-20">
+      <h2
+        class="pb-6 text-2xl text-main-dark sm:pb-12 sm:text-5xl sm:leading-normal"
+      >
+        經典系列鏡框
+      </h2>
+      <ul class="flex flex-col gap-6 md:grid md:grid-cols-12">
+        <li class="md:col-span-6 md:col-start-4">
           <img
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-1.png?raw=true"
             alt="glassesFrame-1"
           />
           <em class="text-5xl font-black leading-normal text-main">OPTICAL</em>
         </li>
-        <li>
+        <li class="md:col-span-6 md:col-start-4">
           <img
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-2.png?raw=true"
             alt="glassesFrame-2"
@@ -135,7 +147,7 @@
             >SUNGLASSES</em
           >
         </li>
-        <li>
+        <li class="md:col-span-6 md:col-start-4">
           <img
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-3.png?raw=true"
             alt="glassesFrame-3"
@@ -147,15 +159,15 @@
       </ul>
     </section>
     <section
-      class="container bg-sm-glasses py-10 text-center md:bg-md-glasses lg:bg-glasses"
+      class="bg-sm-glasses py-10 md:bg-md-glasses md:py-20 lg:bg-glasses"
     >
-      <ul class="flex flex-col gap-6">
-        <li>
-          <h2 class="pb-6 text-2xl text-white">聯名設計鏡框</h2>
-        </li>
+      <ul class="container flex flex-col gap-6 text-center">
+        <h2 class="pb-6 text-2xl text-5xl leading-normal text-white">
+          聯名設計鏡框
+        </h2>
         <li>
           <img
-            class="hidden"
+            class="hidden md:block"
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true"
             alt="glasses-1"
           />
@@ -171,7 +183,7 @@
         </li>
         <li>
           <img
-            class="hidden"
+            class="hidden md:block"
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true"
             alt="glasses-2"
           />
@@ -188,8 +200,12 @@
       </ul>
     </section>
     <article class="container py-10">
-      <h2 class="pb-6 text-center text-2xl text-main-dark">顧客推薦</h2>
-      <ul class="flex flex-col gap-4">
+      <h2
+        class="pb-6 text-center text-2xl leading-normal text-main-dark md:text-5xl"
+      >
+        顧客推薦
+      </h2>
+      <ul class="flex flex-col gap-4 sm:grid sm:grid-cols-2">
         <li class="card">
           <img
             class="card-img"
@@ -245,12 +261,21 @@
       </ul>
     </article>
     <address class="bg-bgc">
-      <div class="container flex flex-col py-10 not-italic">
-        <h2 class="pb-6 text-center text-2xl text-main-dark">聯絡我們</h2>
-        <p>
+      <div
+        class="container flex flex-col py-10 not-italic md:grid md:grid-cols-12"
+      >
+        <h2
+          class="pb-6 text-center text-2xl text-main-dark md:col-span-10 md:col-start-2 md:text-5xl md:leading-normal"
+        >
+          聯絡我們
+        </h2>
+        <p class="md:col-span-10 md:col-start-2">
           我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
         </p>
-        <form class="flex flex-col py-6" action="index.html">
+        <form
+          class="flex flex-col py-6 md:col-span-10 md:col-start-2"
+          action="index.html"
+        >
           <label class="pb-2 pt-4" for="name">姓名</label>
           <input
             class="input"
@@ -290,51 +315,81 @@
             </span>
           </label>
         </form>
-        <button class="bg-main py-4 text-white" type="submit">確認送出</button>
+        <button
+          class="bg-main py-4 text-white md:col-span-6 md:col-start-4"
+          type="submit"
+        >
+          確認送出
+        </button>
       </div>
     </address>
-    <footer class="text-white bg-main py-6">
+    <footer class="bg-main py-6 text-white md:py-12">
       <ul class="contact container">
-        <li class="flex items-center justify-between pb-2">
-          <div class="flex items-center">
+        <li class="flex flex-wrap items-center justify-between pb-2">
+          <ul class="hidden gap-12 md:flex">
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">系列鏡框</a></li>
+            <li><a href="#">門市據點</a></li>
+            <li><a href="#">部落格</a></li>
+            <li><a href="#">常見問題</a></li>
+          </ul>
+          <a class="flex items-center md:hidden" href="tel:+0800-000-000">
             <span class="material-symbols-outlined mr-[10px] h-[18px] w-[18px]">
               call
             </span>
-            <span>0800-000-000</span>
-          </div>
+            0800-000-000
+          </a>
           <ul class="flex gap-2">
             <li>
               <img
-                class="w-6 h-6"
+                class="h-6 w-6 md:h-10 md:w-10"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic-social-fb.png?raw=true"
                 alt="facebook"
               />
             </li>
             <li>
               <img
-                class="w-6 h-6"
+                class="h-6 w-6 md:h-10 md:w-10"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_ig.png?raw=true"
                 alt="instagram"
               />
             </li>
             <li>
               <img
-                class="w-6 h-6"
+                class="h-6 w-6 md:h-10 md:w-10"
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_line.png?raw=true"
                 alt="line"
               />
             </li>
           </ul>
         </li>
-        <li class="flex items-center pb-6">
-          <span class="material-symbols-outlined mr-[10px] h-[18px] w-[18px]">
-            mail
-          </span>
-          <span>glasses@business.com</span>
+        <li class="pb-6">
+          <a
+            class="hidden items-center md:flex md:text-4xl md:leading-[54px]"
+            href="tel:+0800-000-000"
+          >
+            <span
+              class="material-symbols-outlined mr-[10px] text-[18px] md:text-5xl"
+            >
+              call
+            </span>
+            0800-000-000
+          </a>
+          <a
+            class="flex items-center md:text-4xl md:leading-[54px]"
+            href="mailto:glasses@business.com"
+          >
+            <span
+              class="material-symbols-outlined mr-[10px] text-[18px] md:text-5xl"
+            >
+              mail
+            </span>
+            glasses@business.com
+          </a>
         </li>
-        <hr>
+        <hr />
       </ul>
-      <ul class="pt-4 container flex flex-col gap-2">
+      <ul class="container flex flex-col gap-2 pt-4">
         <li>Copyright © 2020 Glasses.All rights reserved.</li>
         <li>隱私權政策</li>
         <li>服務條款</li>
