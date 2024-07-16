@@ -53,4 +53,14 @@
     @apply duration-300 ease-in-out hover:scale-110;
     width: 80px;
   }
+
+  .navbar-selected {
+    @apply absolute bottom-0 left-0 h-2 w-full bg-transparent transition-colors duration-300;
+    content: "";
+  }
+
+  /* radio 選中狀態時添加紅色底部邊框 */
+  .checked:checked + .checked::after {
+    @apply bg-main;
+  }
 }
