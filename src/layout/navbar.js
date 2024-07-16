@@ -14,28 +14,28 @@ document.querySelector("#navbar").innerHTML = `
         >
           <li class="w-1/2 md:w-auto">
             <a
-              class="btn-hover block text-nowrap px-[62px] py-3 outline outline-1 outline-white md:px-0 md:pl-16 md:outline-none"
+              class="btn-hover block text-nowrap px-[62px] py-3 border border-white md:px-0 md:pl-16 md:border-none"
               href="./home-2.html"
               >系列鏡框</a
             >
           </li>
           <li class="w-1/2 md:w-auto">
             <a
-              class="btn-hover block text-nowrap px-[62px] py-3 outline outline-1 outline-white md:px-0 md:pl-16 md:outline-none"
-              href="#"
+              class="btn-hover block text-nowrap px-[62px] py-3 border border-white md:px-0 md:pl-16 md:border-none"
+              href="./home-3.html"
               >門市據點</a
             >
           </li>
           <li class="w-1/2 md:w-auto">
             <a
-              class="btn-hover block text-nowrap px-[62px] py-3 outline outline-1 outline-white md:px-0 md:pl-16 md:outline-none"
+              class="btn-hover block text-nowrap px-[62px] py-3 border border-white md:px-0 md:pl-16 md:border-none"
               href="#"
               >部落格</a
             >
           </li>
           <li class="w-1/2 md:w-auto">
             <a
-              class="btn-hover block text-nowrap px-[62px] py-3 outline outline-1 outline-white md:px-0 md:pl-16 md:outline-none"
+              class="btn-hover block text-nowrap px-[62px] py-3 border border-white md:px-0 md:pl-16 md:border-none"
               href="#"
               >常見問題</a
             >
