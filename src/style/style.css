@@ -1726,6 +1726,11 @@ video {
     font-size: 64px;
   }
 
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .lg\:leading-\[29px\]{
     line-height: 29px;
   }
