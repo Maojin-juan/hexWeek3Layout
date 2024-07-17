@@ -34,7 +34,8 @@ export default {
       },
 
       fontFamily: {
-        sans: ["Noto Sans TC", "Roboto", "sans-serif"],
+        sans: ["Roboto", "Noto Sans TC", "sans-serif"],
+        Roboto: ["Roboto"],
       },
 
       container: {
@@ -42,6 +43,7 @@ export default {
         padding: {
           DEFAULT: "14px",
           md: "2.25rem",
+          lg: "3.25rem",
         },
       },
       screens: {
