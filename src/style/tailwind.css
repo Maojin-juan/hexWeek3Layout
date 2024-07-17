@@ -8,7 +8,9 @@
 
 @layer base {
   /* 擴充專案的全站樣式 */
-  /* *{outline: 1px solid black;} */
+  /* * {
+    outline: 1px solid black;
+  } */
 }
 
 @layer components {
