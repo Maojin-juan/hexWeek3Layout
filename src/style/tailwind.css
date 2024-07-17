@@ -15,23 +15,11 @@
   /* 自組元件 */
 
   .card {
-    @apply flex flex-col rounded shadow-[0px_2px_6px_rgba(0,0,0,0.16)];
-  }
-
-  .card-img {
-    @apply rounded-t;
+    @apply rounded shadow-[0px_2px_6px_rgba(0,0,0,0.16)];
   }
 
   .card-content {
-    @apply flex min-h-[205px] flex-col justify-between p-4;
-  }
-
-  .card-title {
-    @apply pb-2 font-medium;
-  }
-
-  .card-time {
-    @apply text-[14px] leading-[21px] text-[#707070];
+    @apply flex flex-col;
   }
 
   .hover {
@@ -44,6 +32,11 @@
 
   .btn-hover {
     @apply duration-300 ease-in-out hover:scale-110;
+  }
+
+  .quote {
+    @apply absolute left-[-4px] block h-9 w-2 bg-main md:h-[72px];
+    content: "";
   }
 }
 

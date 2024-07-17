@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>門市據點-選擇地區</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div id="navbar-glasses"></div>
+    <main class="container pb-16 pt-10 md:py-20 lg:pt-24">
+      <h2
+        class="before:quote relative pl-4 text-2xl md:text-5xl md:leading-normal"
+      >
+        門市據點
+      </h2>
+      <div class="flex items-center gap-2 py-6 md:pb-10 md:pt-8">
+        <span class="text-nowrap">選擇分店</span>
+        <div
+          class="flex w-[276px] items-center justify-between border border-[#CED4DA] px-3 py-[6px] md:w-[304px]"
+        >
+          <p class="text-nowrap text-[#495057]">台北中山旗艦店</p>
+          <span class="material-symbols-outlined"> arrow_drop_down </span>
+        </div>
+      </div>
+      <div class="grid gap-6 lg:grid-cols-2">
+        <div
+          class="card grid md:grid-cols-2 md:gap-6 md:shadow-none lg:grid-cols-1 lg:gap-0"
+        >
+          <img
+            class="bg-cover bg-center object-cover lg:hidden"
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true"
+            alt="store1"
+          />
+          <img
+            class="hidden bg-cover bg-center object-cover lg:block"
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/storepage-1.png?raw=true"
+            alt="storepage"
+          />
+          <div>
+            <h4
+              class="border border-[#00000020] py-2 pl-6 text-2xl font-normal"
+            >
+              台北中山旗艦店
+            </h4>
+            <ul
+              class="flex min-h-[168px] flex-col gap-2 border border-[#00000020] px-6 py-4 text-xl"
+            >
+              <li class="flex">
+                <span class="material-symbols-outlined mr-2 size-6">call</span>
+                電話：(02)000-1234
+              </li>
+              <li class="flex">
+                <span class="material-symbols-outlined mr-2 size-6">
+                  schedule </span
+                >營業時間：10:00-21:00
+              </li>
+              <li class="flex">
+                <span class="material-symbols-outlined mr-2 size-6">
+                  location_on </span
+                >地址：台北市中山區南京東路25巷2-1號
+              </li>
+            </ul>
+          </div>
+        </div>
+        <iframe
+          class="h-[208px] h-auto w-full md:h-[414px]"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.458523836169!2d121.52910539999999!3d25.052443600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a966f6fc092d%3A0x9f740ea896779b57!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuozmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1721201713004!5m2!1szh-TW!2stw"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </main>
+    <div id="footer"></div>
+    <script type="module" src="./layout/navbar.js"></script>
+    <script type="module" src="./layout/footer.js"></script>
+  </body>
+</html>
