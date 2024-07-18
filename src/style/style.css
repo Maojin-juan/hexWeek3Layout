@@ -1256,6 +1256,7 @@ video {
 .shake-hover:hover {
     animation: shake 0.4s;
   }
+
 @media (min-width: 768px){
 
   .md\:container{
@@ -1305,6 +1306,7 @@ video {
     }
   }
 }
+
 @media (min-width: 992px){
 
   .lg\:container{
@@ -1354,6 +1356,7 @@ video {
     }
   }
 }
+
 .before\:quote::before {
     content: var(--tw-content);
     position: absolute;
@@ -1364,15 +1367,18 @@ video {
     --tw-bg-opacity: 1;
     background-color: rgb(170 6 1 / var(--tw-bg-opacity));
   }
+
 @media (min-width: 768px){
 
   .before\:quote::before{
     height: 72px;
   }
 }
+
 .before\:quote::before {
     content: "";
   }
+
 .after\:navbar-selected::after {
     content: var(--tw-content);
     position: absolute;
@@ -1386,21 +1392,26 @@ video {
     transition-duration: 300ms;
     content: "";
   }
+
 .hover\:bg-black:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
+
 .hover\:text-slate-400:hover{
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
+
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
 .hover\:duration-300:hover{
   transition-duration: 300ms;
 }
+
 @media (min-width: 576px){
 
   .sm\:grid-cols-2{
@@ -1424,6 +1435,7 @@ video {
     line-height: 1.5;
   }
 }
+
 @media (min-width: 768px){
 
   .md\:col-span-10{
@@ -1668,6 +1680,7 @@ video {
     outline-offset: 2px;
   }
 }
+
 @media (min-width: 992px){
 
   .lg\:col-span-4{
@@ -1840,6 +1853,7 @@ video {
     line-height: 1.5;
   }
 }
+
 @media (min-width: 1400px){
 
   .\32xl\:bg-banner{

@@ -16,7 +16,7 @@ document.querySelector("#navbar-glasses").innerHTML = `
         <label
           for="tab1"
           class="checked after:navbar-selected"
-          ><a class="py-4 text-center lg:py-6 font-medium block" href="./home-2.html">OPTICAL</a></label
+          ><a class="py-4 text-center lg:py-6 font-medium block" href="/hexWeek3Layout/src/pages/home-2.html">OPTICAL</a></label
         >
       </li>
       <li
@@ -26,7 +26,7 @@ document.querySelector("#navbar-glasses").innerHTML = `
         <label
           for="tab2"
           class="checked after:navbar-selected"
-          ><a class="py-4 text-center lg:py-6 font-medium block" href="./home-3.html">SUNGLASSES</a></label
+          ><a class="py-4 text-center lg:py-6 font-medium block" href="/hexWeek3Layout/src/pages/home-3.html">SUNGLASSES</a></label
         >
       </li>
       <li class="border-b-1 relative flex-1 border">
