@@ -18,7 +18,7 @@ document.querySelector("#navbar").innerHTML = `
           <li class="w-1/2 md:w-auto">
             <a
               class="hover block py-3 text-center outline outline-1 outline-white md:py-6 md:outline-none"
-              href="./home-2.html"
+              href="/src/pages/home-2.html"
             >
               系列鏡框
             </a>
