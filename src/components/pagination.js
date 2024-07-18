@@ -1,5 +1,3 @@
-import "../style/style.css";
-
 document.querySelector("#pagination").innerHTML = `
   <nav id="pagination">
     <ul class="container flex items-center justify-center">
@@ -12,7 +10,7 @@ document.querySelector("#pagination").innerHTML = `
       </li>
       <li>
         <a
-          class="me-[-1px] block border border-[#555555] px-[15px] py-3 text-[#555555] duration-300 ease-in-out hover:bg-black hover:text-white"
+          class="bg-black text-white me-[-1px] block border border-[#555555] px-[15px] py-3 duration-300 ease-in-out"
           href="#"
           >1</a
         >

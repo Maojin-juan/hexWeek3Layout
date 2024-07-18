@@ -1,5 +1,3 @@
-import "../style/style.css";
-
 document.querySelector("#navbar-glasses").innerHTML = `
   <nav>
     <ul

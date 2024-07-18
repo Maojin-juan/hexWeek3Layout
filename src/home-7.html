@@ -11,15 +11,16 @@
   </head>
   <body>
     <div id="navbar"></div>
-    <section class="container pb-6 pt-10 md:pb-10 md:pt-20 lg:pt-24">
+    <div class="hidden md:block" id="navbar-news"></div>
+    <section class="container pb-6 pt-10 md:pb-10 md:pt-20 lg:pb-8 lg:pt-24">
       <h2
         class="before:quote relative pl-4 text-2xl md:text-5xl md:leading-normal"
       >
         部落格
       </h2>
     </section>
-    <main class="pb-16">
-      <ul class="container grid gap-6 pb-16 lg:gap-y-20 lg:pb-20">
+    <main class="pb-16 lg:pb-20">
+      <ul class="container grid gap-6 pb-16 lg:gap-[60px] lg:pb-[124px]">
         <li>
           <div class="grid gap-2 md:grid-cols-2 md:gap-6" href="#">
             <img
@@ -49,7 +50,7 @@
               </div>
               <a
                 class="btn-hover ml-auto hidden text-4xl font-black leading-normal text-[#650300] lg:block"
-                href="#"
+                href="./home-8.html"
               >
                 MORE
               </a>
@@ -194,7 +195,8 @@
                   年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，⋯⋯more
                 </p>
                 <p class="hidden lg:block">
-                  2020 年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯
+                  2020
+                  年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯
                 </p>
               </div>
               <a
@@ -211,6 +213,7 @@
     </main>
     <div id="footer"></div>
     <script type="module" src="./layout/navbar.js"></script>
+    <script type="module" src="./components/navbar-news.js"></script>
     <script type="module" src="./components/pagination.js"></script>
     <script type="module" src="./layout/footer.js"></script>
   </body>

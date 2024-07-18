@@ -11,62 +11,32 @@
   </head>
   <body>
     <div id="navbar"></div>
-    <nav class="bg-[#650300]">
-      <ul
-        class="container flex items-center text-white md:justify-between md:text-2xl lg:text-[32px] lg:leading-normal"
-      >
-        <li class="flex w-full md:w-auto">
-          <ul
-            class="flex w-full flex-row justify-between md:w-auto md:gap-12 md:text-xl"
-          >
-            <li>
-              <a class="block py-3 text-center font-bold" href="#">最新消息</a>
-            </li>
-            <li>
-              <a class="block py-3 text-center font-bold" href="#">特別企劃</a>
-            </li>
-            <li>
-              <a class="block py-3 text-center font-bold" href="#">新品上市</a>
-            </li>
-            <li>
-              <a class="block py-3 text-center font-bold" href="#">
-                鏡框小知識
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <span class="material-symbols-outlined block text-[40px]">
-              search
-            </span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <div id="navbar-news"></div>
     <section class="container pb-2 pt-4 md:py-2 lg:pt-6">
       <ul class="grid gap-2">
         <li>
-          <a href="#">首頁</a>
+          <a class="hover:text-slate-400 hover:duration-300" href="#">首頁</a>
           /
-          <a href="#">部落格</a>
+          <a class="hover:text-slate-400 hover:duration-300" href="#">部落格</a>
           /
-          <a href="#">特別企劃</a>
+          <a class="hover:text-slate-400 hover:duration-300" href="#">
+            特別企劃
+          </a>
           /
-          <a class="text-main" href="#">情人特別企劃</a>
+          <a class="hover inline-block text-main" href="#">情人特別企劃</a>
         </li>
         <li>
           <div class="flex flex-row gap-4 font-bold text-main md:text-2xl">
-            <a href="#">#special</a>
-            <a href="#">#event</a>
+            <a class="hover" href="#">#special</a>
+            <a class="hover" href="#">#event</a>
           </div>
         </li>
       </ul>
     </section>
     <main class="container">
-      <div class="grid gap-6 pb-16 md:grid-cols-12 md:pb-20">
+      <div class="grid gap-6 pb-16 md:grid-cols-12 md:gap-y-10 md:pb-20">
         <article class="md:col-span-9 lg:col-span-8">
-          <div class="pb-4 md:pb-6">
+          <div class="pb-4 md:pb-6 lg:pb-4">
             <h2 class="text-2xl font-normal md:text-5xl md:leading-normal">
               情人特別企劃
             </h2>
@@ -149,27 +119,45 @@
             </span>
             <p class="lg:text-[32px] lg:leading-normal">TAGS</p>
           </div>
-          <ul class="lg:text-2xl lg:leading-normal">
-            <li class="inline-block pr-4"><a href="#">#special</a></li>
-            <li class="inline-block"><a href="#">#sale</a></li>
+          <ul class="grid lg:gap-1 lg:text-2xl lg:leading-normal">
             <li>
               <ul>
-                <li class="lg:inline-block lg:pr-4">
-                  <a href="#">#new_item</a>
+                <li class="inline-block pr-4 lg:pr-6">
+                  <a class="hover block" href="#">#special</a>
                 </li>
-                <li class="lg:inline-block"><a href="#">#interview</a></li>
+                <li class="inline-block">
+                  <a class="hover block" href="#">#sale</a>
+                </li>
               </ul>
             </li>
-            <li class="inline-block pr-4"><a href="#">#trivia</a></li>
-            <li class="inline-block"><a href="#">#news</a></li>
-            <li class=""><a href="#">#event</a></li>
+            <li>
+              <ul>
+                <li class="lg:inline-block lg:pr-6">
+                  <a class="hover block" href="#">#new_item</a>
+                </li>
+                <li class="lg:inline-block">
+                  <a class="hover block" href="#">#interview</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li class="inline-block pr-4 lg:pr-6">
+                  <a class="hover block" href="#">#trivia</a>
+                </li>
+                <li class="inline-block">
+                  <a class="hover block" href="#">#news</a>
+                </li>
+              </ul>
+            </li>
+            <li><a class="hover block" href="#">#event</a></li>
           </ul>
         </div>
-        <div class="col-span-12 lg:col-span-8">
+        <div class="col-span-12 hidden md:grid lg:col-span-8">
           <ul class="flex gap-4">
-            <li><a class="font-bold">Share</a></li>
+            <li><a class="btn-hover block font-bold" href="#">Share</a></li>
             <li>
-              <a href="#">
+              <a class="btn-hover block" href="#">
                 <img
                   class="size-6"
                   src="./assets/facebbok-sqaure.svg"
@@ -178,7 +166,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a class="btn-hover block" href="#">
                 <img
                   class="size-6"
                   src="./assets/instagram.svg"
@@ -188,21 +176,26 @@
             </li>
           </ul>
           <hr class="mb-6 mt-4 border-[#707070]" />
-          <ul class="flex justify-between">
-            <li class="flex items-center gap-2">
-              <span class="material-symbols-outlined">arrow_back</span>
-              <a href="#">上一篇：街頭潮人訪問 1</a>
-            </li>
-            <li class="flex items-center gap-2">
-              <a href="#">下一篇：街頭潮人訪問 2</a>
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </li>
-          </ul>
+          <div class="flex justify-between">
+            <a class="arrow-hover flex items-center gap-2" href="#">
+              <span class="material-symbols-outlined duration-300">
+                arrow_back
+              </span>
+              上一篇：街頭潮人訪問 1
+            </a>
+            <a class="arrow-hover flex items-center gap-2" href="#">
+              下一篇：街頭潮人訪問 2
+              <span class="material-symbols-outlined duration-300">
+                arrow_forward
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </main>
     <div id="footer"></div>
     <script type="module" src="./layout/navbar.js"></script>
+    <script type="module" src="./components/navbar-news.js"></script>
     <script type="module" src="./layout/footer.js"></script>
   </body>
 </html>

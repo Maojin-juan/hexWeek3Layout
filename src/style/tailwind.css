@@ -16,24 +16,28 @@
 @layer components {
   /* 自組元件 */
 
+  .index-card {
+    @apply hover flex flex-col rounded shadow-[0px_2px_6px_rgba(0,0,0,0.16)];
+  }
+
   .card {
     @apply rounded shadow-[0px_2px_6px_rgba(0,0,0,0.16)];
+  }
+
+  .index-card-content {
+    @apply flex min-h-[205px] flex-col justify-between p-4;
+  }
+
+  .index-card-text {
+    @apply text-[14px] leading-[21px] text-[#707070];
   }
 
   .card-content {
     @apply flex flex-col;
   }
 
-  .hover {
-    @apply duration-300 ease-in-out hover:scale-105;
-  }
-
   .input {
     @apply rounded-sm border border-black bg-transparent p-2;
-  }
-
-  .btn-hover {
-    @apply duration-300 ease-in-out hover:scale-110;
   }
 
   .quote {
@@ -49,13 +53,77 @@
     width: 80px;
   }
 
+  .navbar-list {
+    @apply block text-nowrap border border-white px-[62px] py-3 hover:bg-white hover:text-main md:border-none md:px-0 md:pl-16;
+  }
+
   .navbar-selected {
     @apply absolute bottom-0 left-0 h-2 w-full bg-transparent transition-colors duration-300;
     content: "";
   }
 
+  .classic-glasses-li {
+    @apply md:col-span-6 md:col-start-4 lg:col-span-4 lg:col-start-auto;
+  }
+
+  .classic-glasses-em {
+    @apply text-5xl font-black leading-normal text-main;
+  }
+
+  .optical-glasses-text {
+    @apply flex justify-between text-2xl;
+  }
+
+  .color-block {
+    @apply block size-6 rounded border border-[#B75929] bg-[#B75929];
+  }
+
+  .color-block-dark {
+    @apply block size-6 rounded border border-[#5F3E2D] bg-[#5F3E2D];
+  }
+
   /* radio 選中狀態時添加紅色底部邊框 */
   .checked:checked + .checked::after {
     @apply bg-main;
+  }
+
+  .index-icon {
+    @apply mx-auto mb-4 size-[100px];
+  }
+
+  .hover {
+    @apply duration-300 ease-in-out hover:scale-105;
+  }
+
+  .btn-hover {
+    @apply duration-300 ease-in-out hover:scale-110;
+  }
+
+  .font-hover {
+    @apply duration-300 ease-in-out hover:bg-main;
+  }
+
+  .arrow-hover:hover span {
+    @apply scale-150 transition-all duration-300 ease-out;
+  }
+
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-4px);
+    }
+    50% {
+      transform: translateX(4px);
+    }
+    75% {
+      transform: translateX(-4px);
+    }
+  }
+
+  .shake-hover:hover {
+    animation: shake 0.4s;
   }
 }
