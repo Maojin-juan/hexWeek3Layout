@@ -3,11 +3,11 @@ document.querySelector("#footer").innerHTML = `
       <ul class="contact container">
         <li class="flex flex-wrap items-center justify-between pb-2 md:pb-6">
           <ul class="hidden gap-12 md:flex">
-            <li><a class="btn-hover block" href="./index.html">首頁</a></li>
-            <li><a class="btn-hover block" href="./home-2.html">系列鏡框</a></li>
-            <li><a class="btn-hover block" href="#">門市據點</a></li>
-            <li><a class="btn-hover block" href="#">部落格</a></li>
-            <li><a class="btn-hover block" href="#">常見問題</a></li>
+            <li><a class="btn-hover block" href="/hexWeek3Layout/src/index.html">首頁</a></li>
+            <li><a class="btn-hover block" href="/hexWeek3Layout/src/pages/home-2.html">系列鏡框</a></li>
+            <li><a class="btn-hover block" href="/hexWeek3Layout/src/pages/home-4.html">門市據點</a></li>
+            <li><a class="btn-hover block" href="/hexWeek3Layout/src/pages/home-7.html">部落格</a></li>
+            <li><a class="btn-hover block" href="/hexWeek3Layout/src/pages/home-6.html">常見問題</a></li>
           </ul>
           <a class="flex items-center md:hidden" href="tel:+0800-000-000">
             <span class="material-symbols-outlined mr-2 text-[18px]">
