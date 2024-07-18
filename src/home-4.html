@@ -20,12 +20,19 @@
       </h2>
       <div class="flex items-center gap-2 py-6 md:pb-10 md:pt-8">
         <span class="text-nowrap">選擇地區</span>
-        <div
-          class="flex w-[276px] items-center justify-between border border-[#CED4DA] px-3 py-[6px] md:w-[304px]"
+        <button
+          class="flex w-full items-center justify-between border border-[#CED4DA] px-3 py-[6px] md:w-[304px]"
+          type="button"
         >
           <p class="text-nowrap text-[#495057]">台北市</p>
           <span class="material-symbols-outlined">arrow_drop_down</span>
-        </div>
+        </button>
+        <ul class="hidden">
+          <li><a href="#">全部</a></li>
+          <li><a href="#">台北</a></li>
+          <li><a href="#">新北</a></li>
+          <li><a href="#">台中</a></li>
+        </ul>
       </div>
       <ul class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         <li class="card grid">
