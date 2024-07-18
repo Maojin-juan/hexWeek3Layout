@@ -16,33 +16,68 @@
 @layer components {
   /* 自組元件 */
 
-  .index-card {
+  .indexCard {
     @apply hover flex flex-col rounded shadow-[0px_2px_6px_rgba(0,0,0,0.16)];
   }
 
-  .card {
-    @apply rounded shadow-[0px_2px_6px_rgba(0,0,0,0.16)];
-  }
-
-  .index-card-content {
+  .indexCardContent {
     @apply flex min-h-[205px] flex-col justify-between p-4;
   }
 
-  .index-card-text {
+  .indexCardText {
     @apply text-[14px] leading-[21px] text-[#707070];
   }
 
-  .card-content {
-    @apply flex flex-col;
+  .locationCard {
+    @apply grid rounded shadow-[0px_2px_6px_rgba(0,0,0,0.16)];
+  }
+
+  .locationCardTitle {
+    @apply border border-[#00000020] py-2 pl-6 text-2xl font-normal;
+  }
+
+  .locationCardContent {
+    @apply flex min-h-[168px] flex-col gap-2 border border-[#00000020] px-6 py-4 text-xl;
+  }
+
+  .locationCardIcon {
+    @apply mr-2 size-6;
+  }
+
+  .locationCardBtn {
+    @apply font-hover bg-black py-4 text-center text-white;
+  }
+
+  .questionTitle {
+    @apply pb-2 text-xl font-bold;
+  }
+
+  .blogCard {
+    @apply grid gap-2 md:grid-cols-2 md:gap-6;
+  }
+
+  .blogCardContent {
+    @apply flex flex-col justify-between;
+  }
+
+  .blogCardTitle {
+    @apply text-2xl font-normal leading-normal text-[#650300] lg:text-[32px];
+  }
+
+  .blogCardText {
+    @apply flex justify-between pb-1 lg:pb-4 lg:text-xl lg:leading-normal;
+  }
+
+  .blogCardTextDisplayMd {
+    @apply hidden md:block lg:hidden;
+  }
+
+  .blogValentineImg {
+    @apply pb-2 md:pb-4 lg:pb-2;
   }
 
   .input {
     @apply rounded-sm border border-black bg-transparent p-2;
-  }
-
-  .quote {
-    @apply absolute left-[-4px] block h-9 w-2 bg-main md:h-[72px];
-    content: "";
   }
 }
 
@@ -85,6 +120,11 @@
   /* radio 選中狀態時添加紅色底部邊框 */
   .checked:checked + .checked::after {
     @apply bg-main;
+  }
+
+  .quote {
+    @apply absolute left-[-4px] block h-9 w-2 bg-main md:h-[72px];
+    content: "";
   }
 
   .index-icon {
