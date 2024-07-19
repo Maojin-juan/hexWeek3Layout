@@ -16,7 +16,7 @@
         <li class="w-1/2 md:w-auto">
           <a
             class="navbar-list"
-            href="home-2.html"
+            href="./pages/home-2.js"
           >
             系列鏡框
           </a>
