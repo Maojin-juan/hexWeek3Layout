@@ -5,7 +5,7 @@ document.querySelector("#navbar").innerHTML = `
     <div
       class="flex flex-col md:container md:flex-row md:items-center md:justify-between"
     >
-      <a class="ml-[14px] block md:ml-0" href="./index.html">
+      <a class="ml-[14px] block md:ml-0" href="index.html">
         <img
           class="logo py-4"
           src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true"
@@ -17,32 +17,32 @@ document.querySelector("#navbar").innerHTML = `
       >
         <li class="w-1/2 md:w-auto">
           <a
-            class="hover block py-3 text-center outline outline-1 outline-white md:py-6 md:outline-none"
-            href="/hexWeek3Layout/src/pages/home-2.html"
+            class="navbar-list"
+            href="home-2.html"
           >
             系列鏡框
           </a>
         </li>
         <li class="w-1/2 md:w-auto">
           <a
-            class="hover block py-3 text-center outline outline-1 outline-white md:py-6 md:outline-none"
-            href="/hexWeek3Layout/src/pages/home-4.html"
+            class="navbar-list"
+            href="home-4.html"
           >
             門市據點
           </a>
         </li>
         <li class="w-1/2 md:w-auto">
           <a
-            class="hover block py-3 text-center outline outline-1 outline-white md:py-6 md:outline-none"
-            href="/hexWeek3Layout/src/pages/home-7.html"
+            class="navbar-list"
+            href="home-7.html"
           >
             部落格
           </a>
         </li>
         <li class="w-1/2 md:w-auto">
           <a
-            class="hover block py-3 text-center outline outline-1 outline-white md:py-6 md:outline-none"
-            href="/hexWeek3Layout/src/pages/home-6.html"
+            class="navbar-list"
+            href="home-6.html"
           >
             常見問題
           </a>
@@ -52,7 +52,8 @@ document.querySelector("#navbar").innerHTML = `
   </nav>
 `;
 {
-  /* <div class="flex flex-col justify-between md:container md:flex-row">
+  /* old version
+   <div class="flex flex-col justify-between md:container md:flex-row">
       <a class="logo ml-[15px] py-4 md:ml-0" href="./index.html">
         <img
           src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true"

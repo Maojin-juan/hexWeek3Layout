@@ -1097,15 +1097,6 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.outline{
-  outline-style: solid;
-}
-.outline-1{
-  outline-width: 1px;
-}
-.outline-white{
-  outline-color: #fff;
-}
 .duration-300{
   transition-duration: 300ms;
 }
@@ -1127,57 +1118,73 @@ video {
   }
 .navbar-list{
   display: block;
-  text-wrap: nowrap;
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-  padding-left: 62px;
-  padding-right: 62px;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  text-align: center;
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: #fff;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navbar-list:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(170 6 1 / var(--tw-text-opacity));
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 @media (min-width: 768px){
 
   .navbar-list{
-    border-style: none;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-left: 4rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
   }
+}
+/* .navbar-list(old) {
+    @apply block text-nowrap border border-white px-[62px] py-3 hover:bg-white hover:text-main md:border-none md:px-0 md:pl-16;
+  } */
+.navbarGlasses-li{
+  display: block;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
+  font-weight: 700;
+}
+/* radio 選中狀態時添加紅色底部邊框 */
+.checked:checked + .checked::after{
+  --tw-bg-opacity: 1;
+  background-color: rgb(170 6 1 / var(--tw-bg-opacity));
+}
+@media (min-width: 768px){
 
-  .classic-glasses-li{
+  .classicGlasses-li{
     grid-column: span 6 / span 6;
     grid-column-start: 4;
   }
 }
 @media (min-width: 992px){
 
-  .classic-glasses-li{
+  .classicGlasses-li{
     grid-column: span 4 / span 4;
     grid-column-start: auto;
   }
 }
-.classic-glasses-em{
+.classicGlasses-em{
   font-size: 3rem;
   font-weight: 900;
   line-height: 1.5;
   --tw-text-opacity: 1;
   color: rgb(170 6 1 / var(--tw-text-opacity));
 }
-.optical-glasses-text{
+.opticalGlasses-text{
   display: flex;
   justify-content: space-between;
   font-size: 1.5rem;
   line-height: 2.25rem;
   font-weight: 700;
 }
-.color-block{
+.colorBlock{
   display: block;
   width: 1.5rem;
   height: 1.5rem;
@@ -1188,7 +1195,7 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(183 89 41 / var(--tw-bg-opacity));
 }
-.color-block-dark{
+.colorBlock-dark{
   display: block;
   width: 1.5rem;
   height: 1.5rem;
@@ -1199,12 +1206,7 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(95 62 45 / var(--tw-bg-opacity));
 }
-/* radio 選中狀態時添加紅色底部邊框 */
-.checked:checked + .checked::after{
-  --tw-bg-opacity: 1;
-  background-color: rgb(170 6 1 / var(--tw-bg-opacity));
-}
-.index-icon{
+.indexIcon{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
@@ -1220,16 +1222,16 @@ video {
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.btn-hover{
+.btnHover{
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-hover:hover{
+.btnHover:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.arrow-hover:hover span{
+.arrowHover:hover span{
   --tw-scale-x: 1.5;
   --tw-scale-y: 1.5;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1379,7 +1381,7 @@ video {
     content: "";
   }
 
-.after\:navbar-selected::after {
+.after\:navbarGlasses-selected::after {
     content: var(--tw-content);
     position: absolute;
     bottom: 0px;
@@ -1570,11 +1572,6 @@ video {
     padding-bottom: 5rem;
   }
 
-  .md\:py-6{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
   .md\:py-\[296px\]{
     padding-top: 296px;
     padding-bottom: 296px;
@@ -1673,11 +1670,6 @@ video {
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  }
-
-  .md\:outline-none{
-    outline: 2px solid transparent;
-    outline-offset: 2px;
   }
 }
 

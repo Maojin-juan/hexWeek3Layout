@@ -45,7 +45,7 @@
   }
 
   .locationCardBtn {
-    @apply font-hover bg-black py-4 text-center text-white;
+    @apply bg-black py-4 text-center text-white duration-300 ease-in-out hover:bg-main;
   }
 
   .questionTitle {
@@ -89,32 +89,20 @@
   }
 
   .navbar-list {
-    @apply block text-nowrap border border-white px-[62px] py-3 hover:bg-white hover:text-main md:border-none md:px-0 md:pl-16;
+    @apply hover block py-3 text-center outline outline-1 outline-white md:py-6 md:outline-none;
   }
 
-  .navbar-selected {
+  /* .navbar-list(old) {
+    @apply block text-nowrap border border-white px-[62px] py-3 hover:bg-white hover:text-main md:border-none md:px-0 md:pl-16;
+  } */
+
+  .navbarGlasses-selected {
     @apply absolute bottom-0 left-0 h-2 w-full bg-transparent transition-colors duration-300;
     content: "";
   }
 
-  .classic-glasses-li {
-    @apply md:col-span-6 md:col-start-4 lg:col-span-4 lg:col-start-auto;
-  }
-
-  .classic-glasses-em {
-    @apply text-5xl font-black leading-normal text-main;
-  }
-
-  .optical-glasses-text {
-    @apply flex justify-between text-2xl;
-  }
-
-  .color-block {
-    @apply block size-6 rounded border border-[#B75929] bg-[#B75929];
-  }
-
-  .color-block-dark {
-    @apply block size-6 rounded border border-[#5F3E2D] bg-[#5F3E2D];
+  .navbarGlasses-li {
+    @apply block py-3 text-center font-bold;
   }
 
   /* radio 選中狀態時添加紅色底部邊框 */
@@ -122,12 +110,32 @@
     @apply bg-main;
   }
 
+  .classicGlasses-li {
+    @apply md:col-span-6 md:col-start-4 lg:col-span-4 lg:col-start-auto;
+  }
+
+  .classicGlasses-em {
+    @apply text-5xl font-black leading-normal text-main;
+  }
+
+  .opticalGlasses-text {
+    @apply flex justify-between text-2xl;
+  }
+
+  .colorBlock {
+    @apply block size-6 rounded border border-[#B75929] bg-[#B75929];
+  }
+
+  .colorBlock-dark {
+    @apply block size-6 rounded border border-[#5F3E2D] bg-[#5F3E2D];
+  }
+
   .quote {
     @apply absolute left-[-4px] block h-9 w-2 bg-main md:h-[72px];
     content: "";
   }
 
-  .index-icon {
+  .indexIcon {
     @apply mx-auto mb-4 size-[100px];
   }
 
@@ -135,15 +143,11 @@
     @apply duration-300 ease-in-out hover:scale-105;
   }
 
-  .btn-hover {
+  .btnHover {
     @apply duration-300 ease-in-out hover:scale-110;
   }
 
-  .font-hover {
-    @apply duration-300 ease-in-out hover:bg-main;
-  }
-
-  .arrow-hover:hover span {
+  .arrowHover:hover span {
     @apply scale-150 transition-all duration-300 ease-out;
   }
 

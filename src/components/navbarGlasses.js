@@ -1,4 +1,6 @@
-document.querySelector("#navbar-glasses").innerHTML = `
+import "../style/style.css";
+
+document.querySelector("#navbarGlasses").innerHTML = `
   <nav>
     <ul
       class="flex items-center lg:container md:text-2xl lg:text-[32px] lg:leading-normal"
@@ -15,8 +17,8 @@ document.querySelector("#navbar-glasses").innerHTML = `
         />
         <label
           for="tab1"
-          class="checked after:navbar-selected"
-          ><a class="py-4 text-center lg:py-6 font-medium block" href="/hexWeek3Layout/src/pages/home-2.html">OPTICAL</a></label
+          class="checked after:navbarGlasses-selected"
+          ><a class="py-4 text-center lg:py-6 font-medium block" href="home-2.html">OPTICAL</a></label
         >
       </li>
       <li
@@ -25,16 +27,16 @@ document.querySelector("#navbar-glasses").innerHTML = `
         <input type="radio" name="tabs" id="tab2" class="checked hidden" />
         <label
           for="tab2"
-          class="checked after:navbar-selected"
-          ><a class="py-4 text-center lg:py-6 font-medium block" href="/hexWeek3Layout/src/pages/home-3.html">SUNGLASSES</a></label
+          class="checked after:navbarGlasses-selected"
+          ><a class="py-4 text-center lg:py-6 font-medium block" href="home-3.html">SUNGLASSES</a></label
         >
       </li>
       <li class="border-b-1 relative flex-1 border">
         <input type="radio" name="tabs" id="tab3" class="checked hidden" />
         <label
           for="tab3"
-          class="checked after:navbar-selected"
-          ><a class="py-4 text-center lg:py-6 font-medium block" href="./home-4.html">FUNCTIONAL</a></label
+          class="checked after:navbarGlasses-selected"
+          ><a class="py-4 text-center lg:py-6 font-medium block" href="home-4.html">FUNCTIONAL</a></label
         >
       </li>
     </ul>
