@@ -1,9 +1,9 @@
-(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))i(e);new MutationObserver(e=>{for(const l of e)if(l.type==="childList")for(const s of l.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&i(s)}).observe(document,{childList:!0,subtree:!0});function o(e){const l={};return e.integrity&&(l.integrity=e.integrity),e.referrerPolicy&&(l.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?l.credentials="include":e.crossOrigin==="anonymous"?l.credentials="omit":l.credentials="same-origin",l}function i(e){if(e.ep)return;e.ep=!0;const l=o(e);fetch(e.href,l)}})();document.querySelector("#navbar").innerHTML=`
+(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))a(e);new MutationObserver(e=>{for(const l of e)if(l.type==="childList")for(const t of l.addedNodes)t.tagName==="LINK"&&t.rel==="modulepreload"&&a(t)}).observe(document,{childList:!0,subtree:!0});function i(e){const l={};return e.integrity&&(l.integrity=e.integrity),e.referrerPolicy&&(l.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?l.credentials="include":e.crossOrigin==="anonymous"?l.credentials="omit":l.credentials="same-origin",l}function a(e){if(e.ep)return;e.ep=!0;const l=i(e);fetch(e.href,l)}})();document.querySelector("#navbar").innerHTML=`
   <nav class="bg-main">
     <div
       class="flex flex-col md:container md:flex-row md:items-center md:justify-between"
     >
-      <a class="ml-[14px] block md:ml-0" href="/index.html">
+      <a class="ml-[14px] block md:ml-0" href="index.html">
         <img
           class="logo py-4"
           src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true"
@@ -15,32 +15,32 @@
       >
         <li class="w-1/2 md:w-auto">
           <a
-            class="hover block py-3 text-center outline outline-1 outline-white md:py-6 md:outline-none"
-            href="/home-2.html"
+            class="navbar-list"
+            href="home-2.html"
           >
             系列鏡框
           </a>
         </li>
         <li class="w-1/2 md:w-auto">
           <a
-            class="hover block py-3 text-center outline outline-1 outline-white md:py-6 md:outline-none"
-            href="/home-4.html"
+            class="navbar-list"
+            href="home-4.html"
           >
             門市據點
           </a>
         </li>
         <li class="w-1/2 md:w-auto">
           <a
-            class="hover block py-3 text-center outline outline-1 outline-white md:py-6 md:outline-none"
-            href="/home-7.html"
+            class="navbar-list"
+            href="home-7.html"
           >
             部落格
           </a>
         </li>
         <li class="w-1/2 md:w-auto">
           <a
-            class="hover block py-3 text-center outline outline-1 outline-white md:py-6 md:outline-none"
-            href="/home-6.html"
+            class="navbar-list"
+            href="home-6.html"
           >
             常見問題
           </a>
@@ -53,11 +53,11 @@
       <ul class="contact container">
         <li class="flex flex-wrap items-center justify-between pb-2 md:pb-6">
           <ul class="hidden gap-12 md:flex">
-            <li><a class="btn-hover block" href="/index.html">首頁</a></li>
-            <li><a class="btn-hover block" href="/home-2.html">系列鏡框</a></li>
-            <li><a class="btn-hover block" href="/home-4.html">門市據點</a></li>
-            <li><a class="btn-hover block" href="/home-7.html">部落格</a></li>
-            <li><a class="btn-hover block" href="/home-6.html">常見問題</a></li>
+            <li><a class="btnHover block" href="index.html">首頁</a></li>
+            <li><a class="btnHover block" href="home-2.html">系列鏡框</a></li>
+            <li><a class="btnHover block" href="home-4.html">門市據點</a></li>
+            <li><a class="btnHover block" href="home-7.html">部落格</a></li>
+            <li><a class="btnHover block" href="home-6.html">常見問題</a></li>
           </ul>
           <a class="flex items-center md:hidden" href="tel:+0800-000-000">
             <span class="material-symbols-outlined mr-2 text-[18px]">
@@ -67,14 +67,14 @@
           </a>
           <ul class="flex gap-2 md:gap-4">
             <li>
-              <a class="btn-hover block size-6 md:size-10 lg:size-12" href="#"
+              <a class="btnHover block size-6 md:size-10 lg:size-12" href="#"
                 ><img
                   src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic-social-fb.png?raw=true"
                   alt="facebook"
               /></a>
             </li>
             <li>
-              <a class="btn-hover block size-6 md:size-10 lg:size-12" href="#"
+              <a class="btnHover block size-6 md:size-10 lg:size-12" href="#"
                 ><img
                   class="size-6 md:size-10 lg:size-12"
                   src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_ig.png?raw=true"
@@ -82,7 +82,7 @@
               /></a>
             </li>
             <li>
-              <a class="btn-hover block size-6 md:size-10 lg:size-12" href="#"
+              <a class="btnHover block size-6 md:size-10 lg:size-12" href="#"
                 ><img
                   class="size-6 md:size-10 lg:size-12"
                   src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_line.png?raw=true"
