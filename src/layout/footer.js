@@ -1,5 +1,3 @@
-import "../style/style.css";
-
 document.querySelector("#footer").innerHTML = `
   <footer class="bg-main py-6 text-white md:pb-10 md:pt-12">
       <ul class="contact container">
